@@ -1,5 +1,10 @@
-<ul>
-<li *ngFor="let sign of signs">
+<h2>The Twelve Signs</h2>
+<ul class="signs">
+<li *ngFor="let sign of signs"
+    [class.selected]="sign === selectedSign"
+    (click)="onSelect(sign)">
     <span>{{ sign.name }}</span>
 </li>
 </ul>
+
+<app-sign-detail [sign]="selectedSign"></app-sign-detail>

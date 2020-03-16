@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Sign } from '../sign';
 import { SIGNS } from '../theSigns';
 
@@ -10,7 +10,7 @@ import { SIGNS } from '../theSigns';
 export class SignsComponent implements OnInit {
   
   signs = SIGNS;
-  //selectedSign: Sign;
+  selectedSign: Sign;
 
 
   constructor() { }
@@ -18,4 +18,7 @@ export class SignsComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelect(hero: Sign): void {
+    this.selectedSign = hero;
+  }
 }

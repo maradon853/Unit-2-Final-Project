@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Sign } from './sign';
+//import { Sign } from './sign';
 
 @Component({
   selector: 'app-root',
