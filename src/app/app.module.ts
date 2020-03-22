@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignsComponent } from './signs/signs.component';
 import { SignDetailComponent } from './sign-detail/sign-detail.component';
+import { YourSignFormComponent } from './your-sign-form/your-sign-form.component';
+import { HoroscopeComponent } from './horoscope/horoscope.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignsComponent,
-    SignDetailComponent
+    SignDetailComponent,
+    YourSignFormComponent,
+    HoroscopeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
