@@ -8,6 +8,7 @@ import { SignDetailComponent } from './sign-detail/sign-detail.component';
 import { YourSignFormComponent } from './your-sign-form/your-sign-form.component';
 import { HoroscopeComponent } from './horoscope/horoscope.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignSearchComponent } from './sign-search/sign-search.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignsComponent,
     SignDetailComponent,
     YourSignFormComponent,
-    HoroscopeComponent
+    HoroscopeComponent,
+    SignSearchComponent
   ],
   imports: [
     BrowserModule,
