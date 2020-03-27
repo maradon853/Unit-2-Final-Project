@@ -1,16 +1,16 @@
 import { Sign } from "./sign";
 
 export const SIGNS: Sign[] = [
-    new Sign("Aries", 3/21, 4/20, "fire", "mars", "cardinal", "The Emperor"),
-    new Sign("Taurus", 4/21, 5/21, "earth", "venus", "fixed", "The Hierophant"),
-    new Sign("Gemini", 5/22, 6/21, "air", "mercury", "mutable", "The Lovers"),
-    new Sign("Cancer", 6/22, 7/22, "water", "moon", "cardinal", "The Chariot"),
-    new Sign("Leo", 7/23, 8/22, "fire", "sun", "fixed", "Strength"),
-    new Sign("Virgo", 8/23, 9/22, "earth", "mercury", "mutable", "The Hermit"),
-    new Sign("Libra", 9/23, 10/22, "air", "venus", "cardinal", "Justice"),
-    new Sign("Scorpio", 10/23, 11/21, "water", "mars & pluto", "fixed", "Death"),
-    new Sign("Sagittarius", 11/22, 12/21, "fire", "jupiter", "mutable", "Temperance"),
-    new Sign("Capricorn", 12/22, 1/19, "earth", "saturn", "cardinal", "Devil"),
-    new Sign("Aquarius", 1/20, 2/18, "air", "saturn & uranus", "fixed", "The Star"),
-    new Sign("Pisces", 2/19, 3/20, "water", "jupiter & neptune", "mutable", "The Moon")  
+    new Sign("aries", "march 21", "april 20", "fire", "mars", "cardinal", "the emperor"),
+    new Sign("taurus", "april 21", "may 21", "earth", "venus", "fixed", "the hierophant"),
+    new Sign("gemini", "may 22", "june 21", "air", "mercury", "mutable", "the lovers"),
+    new Sign("cancer", "june 22", "july 22", "water", "moon", "cardinal", "the chariot"),
+    new Sign("leo", "july 23", "august 22", "fire", "sun", "fixed", "strength"),
+    new Sign("virgo", "august 23", "september 22", "earth", "mercury", "mutable", "the hermit"),
+    new Sign("libra", "september 23", "october 22", "air", "venus", "cardinal", "justice"),
+    new Sign("scorpio", "october 23", "november 21", "water", "mars & pluto", "fixed", "death"),
+    new Sign("sagittarius", "november 22", "december 21", "fire", "jupiter", "mutable", "temperance"),
+    new Sign("capricorn", "december 22", "january 19", "earth", "saturn", "cardinal", "devil"),
+    new Sign("aquarius", "january 20", "february 18", "air", "saturn & uranus", "fixed", "the star"),
+    new Sign("pisces", "february 19", "march 20", "water", "jupiter & neptune", "mutable", "the moon")  
 ];

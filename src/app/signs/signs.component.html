@@ -5,7 +5,7 @@
 <li *ngFor="let sign of signs"
     [class.selected]="sign === selectedSign"
     (click)="onSelect(sign)">
-    <span>{{ sign.name }}</span>
+    <span>{{ sign.name | titlecase }}</span>
 </li>
 </ul>
 <!--</div>
