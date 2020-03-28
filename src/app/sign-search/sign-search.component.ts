@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-search',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-search.component.scss']
 })
 export class SignSearchComponent implements OnInit {
+  title = 'sign-search';
+  registerForm: FormGroup;
+  submitted = false;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.registerForm = this.formBuilder.group({
+      signs: ['', Validators.required],
+    });
   }
 
 }

@@ -9,6 +9,7 @@ import { YourSignFormComponent } from './your-sign-form/your-sign-form.component
 import { HoroscopeComponent } from './horoscope/horoscope.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignSearchComponent } from './sign-search/sign-search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SignSearchComponent } from './sign-search/sign-search.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
