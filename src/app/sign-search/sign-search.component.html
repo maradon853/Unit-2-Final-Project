@@ -15,5 +15,7 @@
         <option value="Aquarius">Aquarius</option>
         <option value="Pisces">Pisces</option>
     </select>
+    <button class="btn btn-primary">Go!</button>
+    <div *ngIf="this.registerForm.controls.signs.errors.required">Title is required</div>
 </div>
 </form>
