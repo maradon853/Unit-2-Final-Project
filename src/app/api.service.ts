@@ -5,8 +5,15 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
+//NASA API Key:
+  API_KEY = 'r8zWj49xP9PMNbySl2fd924fSvZeTtGM1HcVbyq2';
 
-  API_KEY = '457332fcc9mshc78086a8674c47cp14f6d3jsn17bb78zze0dc';
+  url = `https://api.nasa.gov/planetary/apod?api_key=${this.API_KEY}`
 
   constructor(private httpClient: HttpClient) { }
+
+  getPics() {
+    const pics = this.httpClient.get(this.url);
+    return pics;
+  }
 }
