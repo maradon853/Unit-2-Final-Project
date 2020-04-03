@@ -1,29 +1,29 @@
-<h1>The {{title | titlecase}}</h1>
+<h1>{{title | titlecase}}</h1>
 <div class="grid">
 <div class="row">
     <div class="col-1-4">
-        <a>Home</a>
+        <a class="nav-link" href="/">Home</a>
     </div>
     <div class="col-1-4">
-        <a>The 12 Signs</a>
+        <a class="nav-link" href="planets">The Planets</a>
     </div>
     <div class="col-1-4">
-        <a>Find Your Sign</a>
+        <a class="nav-link" href="rulling planet">Your Rulling Planet</a>
     </div>
     <div class="col-1-4">
-        <a>Find Your Horoscope</a>
+        <a class="nav-link" href="apod">APOD</a>
     </div>
 </div>
 
 <div class="row">
 <div class="col-1-2">
-<app-signs></app-signs>
+<app-planets></app-planets>
 </div>   
 
 <div class="col-1-2">
-<app-horoscope></app-horoscope>
-<hr>
-<app-outer-space></app-outer-space>
+<app-rulling-planet></app-rulling-planet>
+</div>
+
 </div>
 </div>
-</div>
+<router-outlet></router-outlet>

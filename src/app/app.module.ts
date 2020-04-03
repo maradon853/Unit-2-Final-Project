@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignSearchComponent } from './sign-search/sign-search.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OuterSpaceComponent } from './outer-space/outer-space.component';
+import { PlanetsComponent } from './planets/planets.component';
+import { RullingPlanetComponent } from './rulling-planet/rulling-planet.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { OuterSpaceComponent } from './outer-space/outer-space.component';
     YourSignFormComponent,
     HoroscopeComponent,
     SignSearchComponent,
-    OuterSpaceComponent
+    OuterSpaceComponent,
+    PlanetsComponent,
+    RullingPlanetComponent
   ],
   imports: [
     BrowserModule,
