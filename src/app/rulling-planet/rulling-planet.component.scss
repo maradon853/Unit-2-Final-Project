@@ -2,6 +2,17 @@ h1 {
     font-family: "Brush Script MT";
     font-size: 4em;
   }
+  h3 {
+    font-family: "Brush Script MT";
+    font-size: 3em;
+    text-align: center;
+  }
   .planetForm {
       padding-left: 80px;
+  }
+  [class*='col-'] {
+    float: left;
+  }
+  .col-1-2 {
+    width: 50%
   }

@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { OuterSpaceComponent } from './outer-space/outer-space.component';
 import { PlanetsComponent } from './planets/planets.component';
 import { RullingPlanetComponent } from './rulling-planet/rulling-planet.component';
+import { PlanetDetailComponent } from './planet-detail/planet-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RullingPlanetComponent } from './rulling-planet/rulling-planet.componen
     SignSearchComponent,
     OuterSpaceComponent,
     PlanetsComponent,
-    RullingPlanetComponent
+    RullingPlanetComponent,
+    PlanetDetailComponent
   ],
   imports: [
     BrowserModule,
