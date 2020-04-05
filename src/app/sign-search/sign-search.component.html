@@ -1,7 +1,7 @@
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <div class="form-row">
         <label>Select Your Sign</label>
-    <select formControlName="signs" class="form-control" [ngClass]="{ 'is-invalid': submitted && this.registerForm.controls.title.errors }">
+    <select formControlName="signs" class="form-control">
         <option value="Aries">Aries</option>
         <option value="Taurus">Taurus</option>
         <option value="Gemini">Gemini</option>
@@ -15,6 +15,5 @@
         <option value="Aquarius">Aquarius</option>
         <option value="Pisces">Pisces</option>
     </select>
-    
-    <div *ngIf="submitted && this.registerForm.controls.title.errors" class="invalid-feedback"></div>
+    </div>
 

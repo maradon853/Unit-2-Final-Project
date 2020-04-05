@@ -1,15 +1,22 @@
-<div class="grid">
-    <div class="row">
-        <div class="col-1-2">
+
 <div class="planetForm">
 <h1>Find Your Rulling Planet</h1>
-<app-sign-search></app-sign-search>
-</div>
-</div>
 
-<div class="col-1-2">
-<h3>Your Rulling Planet:</h3>
-<app-planet-detail></app-planet-detail>
-</div>
-</div>
-</div>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    
+<label>Select Your Sign</label>
+<select formControlName="planets" class="form-control">
+
+<option *ngFor="let planet of planets" 
+        (click)="onSelect(planet)"
+        [class.selected]="planet === selectedPlanet" 
+        value="planet.sign">{{planet.sign}}</option>        
+</select>
+</form>  
+
+<app-planet-detail [planet]="selectedPlanet"></app-planet-detail>
+
+
+    
+
+
