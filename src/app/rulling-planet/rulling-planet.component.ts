@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Sign } from '../sign';
 import { SIGNS } from '../theSigns';
+
 
 @Component({
   selector: 'app-rulling-planet',
@@ -14,8 +15,17 @@ export class RullingPlanetComponent implements OnInit {
   submitted = false;
   signs = SIGNS;
   selectedSign: Sign;
+  form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) { 
+    this.form = new FormGroup({
+      sign: new FormControl(null)
+    })
+  }
+
+  get sign(): string {
+    return this.form ? this.form.get('sign').value : '';
+  }
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({

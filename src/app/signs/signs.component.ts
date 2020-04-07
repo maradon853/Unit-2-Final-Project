@@ -18,7 +18,7 @@ export class SignsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(hero: Sign): void {
-    this.selectedSign = hero;
+  onSelect(sign: Sign): void {
+    this.selectedSign = sign;
   }
 }
