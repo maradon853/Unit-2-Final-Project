@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { PLANETS } from '../thePlanets';
-import { Planet } from '../planet';
+import { Sign } from '../sign';
+import { SIGNS } from '../theSigns';
 
 @Component({
   selector: 'app-rulling-planet',
@@ -12,19 +12,19 @@ export class RullingPlanetComponent implements OnInit {
   title = 'rulling-planet';
   registerForm: FormGroup;
   submitted = false;
-  planets = PLANETS;
-  selectedPlanet: Planet;
+  signs = SIGNS;
+  selectedSign: Sign;
 
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
-      planets: ['', Validators.required],
+      signs: ['', Validators.required],
     });
   }
   
-  onSelect(planet: Planet): void {
-    this.selectedPlanet = planet;
+  onSelect(sign: Sign): void {
+    this.selectedSign = sign;
   }
 
   onSubmit() {

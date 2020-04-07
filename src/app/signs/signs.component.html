@@ -1,4 +1,6 @@
-
+<div class="grid">
+    <div class="row">
+        <div class="col-1-2">
 <h1>The Twelve Signs</h1>
 <ul class="signs">
 <li *ngFor="let sign of signs"
@@ -7,5 +9,9 @@
     <span>{{ sign.name | titlecase }}</span>
 </li>
 </ul>
+</div>
 
+<div class="row">
+    <div class="col-1-2">
 <app-sign-detail [sign]="selectedSign"></app-sign-detail>
+    </div>

@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Sign } from '../sign';
 import { Planet } from '../planet';
+import { PLANETS } from '../thePlanets';
+
 
 @Component({
   selector: 'app-planet-detail',
@@ -7,7 +10,7 @@ import { Planet } from '../planet';
   styleUrls: ['./planet-detail.component.scss']
 })
 export class PlanetDetailComponent implements OnInit {
-  @Input() planet: Planet;
+  @Input() sign: Sign;
 
   constructor() { }
 

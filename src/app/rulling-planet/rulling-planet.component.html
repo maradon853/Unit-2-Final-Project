@@ -1,22 +1,33 @@
+        <div class="grid">
+        <div class="row">
+        <div class="col-1-2">
 
-<div class="planetForm">
-<h1>Find Your Rulling Planet</h1>
+        <h1>Find Your Rulling Planet</h1>
+         
+        <label>Select Your Sign</label>
+         
+        <div class = "btn-group">
+                <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+                   Select
+                   <span class = "caret"></span>
+                </button>
+                
+                <ul class = "dropdown-menu" role = "menu">
+                <li *ngFor="let sign of signs"
+                [class.selected]="sign === selectedSign"
+                (click)="onSelect(sign)">{{sign.name}}</li>       
+                </ul>
+        
+        </div>
+        </div> 
 
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-    
-<label>Select Your Sign</label>
-<select formControlName="planets" class="form-control">
-
-<option *ngFor="let planet of planets" 
-        (click)="onSelect(planet)"
-        [class.selected]="planet === selectedPlanet" 
-        value="planet.sign">{{planet.sign}}</option>        
-</select>
-</form>  
-
-<app-planet-detail [planet]="selectedPlanet"></app-planet-detail>
-
-
+        
+        <div class="col-1-2">
+        <app-planet-detail [sign]="selectedSign"></app-planet-detail>
+        </div>
+        </div>
+        </div>
+        
     
 
 

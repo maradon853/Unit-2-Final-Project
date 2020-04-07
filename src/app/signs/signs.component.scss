@@ -2,8 +2,14 @@ h1 {
   font-family: "Brush Script MT";
   font-size: 4em;
 }
-.card {
-  background-color: lightcoral;
+.grid{
+  padding-left: 80px;
+}
+[class*='col-'] {
+  float: left;
+}
+.col-1-2{
+  width: 50%
 }
 .signs {
     margin: 0 0 2em 0;
@@ -15,22 +21,22 @@ h1 {
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: rgb(211, 141, 218);
+    background-color: lightblue;
     margin: .5em;
     padding: .3em 0;
     height: 1.6em;
     border-radius: 4px;
   }
   .signs li:hover {
-    color: rgb(50, 10, 83);
-    background-color: rgb(217, 176, 233);
+    //color: rgb(50, 10, 83);
+    background-color: lightseagreen;
     left: .1em;
   }
   .signs li.selected {
-    background-color: rgb(217, 176, 233);
-    color: rgb(50, 10, 83);
+    background-color: lightseagreen;
+    //color: rgb(50, 10, 83);
   }
   .heroes li.selected:hover {
-    background-color: rgb(241, 230, 245);
-    color: rgb(204, 156, 214);
+    background-color: lightseagreen;
+    //color: rgb(204, 156, 214);
   }

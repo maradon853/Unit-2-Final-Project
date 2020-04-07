@@ -4,10 +4,11 @@ import { OuterSpaceComponent } from './outer-space/outer-space.component';
 import { PlanetsComponent } from './planets/planets.component';
 import { RullingPlanetComponent } from './rulling-planet/rulling-planet.component';
 import { AppComponent } from './app.component';
+import { SignsComponent } from './signs/signs.component';
 
 const routes: Routes = [
   //{ path: "", component: AppComponent },
-  { path: "planets", component: PlanetsComponent },
+  { path: "signs", component: SignsComponent },
   { path: "rulling planet", component: RullingPlanetComponent },
   { path: "apod", component: OuterSpaceComponent }
 ];
