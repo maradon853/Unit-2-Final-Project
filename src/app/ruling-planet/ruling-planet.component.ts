@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 import { Sign } from '../sign';
 import { SIGNS } from '../theSigns';
 
-
 @Component({
   selector: 'app-ruling-planet',
   templateUrl: './ruling-planet.component.html',
@@ -11,7 +10,7 @@ import { SIGNS } from '../theSigns';
 })
 export class RulingPlanetComponent implements OnInit {
   title = 'ruling-planet';
-  registerForm: FormGroup;
+  //registerForm: FormGroup;
   submitted = false;
   signs = SIGNS;
   selectedSign: Sign;
@@ -28,8 +27,8 @@ export class RulingPlanetComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.registerForm = this.formBuilder.group({
-      signs: ['', Validators.required],
+    this.form = this.formBuilder.group({
+      sign: ['', Validators.required],
     });
   }
   
@@ -41,7 +40,7 @@ export class RulingPlanetComponent implements OnInit {
     this.submitted = true;
 
     // stop here if form is invalid
-  if (this.registerForm.invalid) {
+  if (this.form.invalid) {
     return;
   }
   }
