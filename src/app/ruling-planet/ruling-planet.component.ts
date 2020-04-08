@@ -5,12 +5,12 @@ import { SIGNS } from '../theSigns';
 
 
 @Component({
-  selector: 'app-rulling-planet',
-  templateUrl: './rulling-planet.component.html',
-  styleUrls: ['./rulling-planet.component.scss']
+  selector: 'app-ruling-planet',
+  templateUrl: './ruling-planet.component.html',
+  styleUrls: ['./ruling-planet.component.scss']
 })
-export class RullingPlanetComponent implements OnInit {
-  title = 'rulling-planet';
+export class RulingPlanetComponent implements OnInit {
+  title = 'ruling-planet';
   registerForm: FormGroup;
   submitted = false;
   signs = SIGNS;
