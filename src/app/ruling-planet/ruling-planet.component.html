@@ -1,4 +1,4 @@
-<div class="signForm">
+<div class="form-group" [class.has-error]="form.touched && form.invalid">
 
     <h1>Find Your Ruling Planet</h1>
     
@@ -6,16 +6,14 @@
 
     <label>Select Your Sign</label>
           
-    <select formControlName="sign" class="form-control" [ngClass]="{ 'is-invalid': submitted && this.form.controls.sign.errors }">
-    <option value=""></option>
+    <select formControlName="sign" id="form" class="form-control">
+    
         <option *ngFor="let sign of signs"
              [ngValue]="sign">{{sign.name | titlecase}}</option>
                     
     </select>
-    <div *ngIf="submitted && this.form.controls.sign.errors" class="invalid-feedback">
-        <div *ngIf="this.form.controls.sign.errors.required">Please Select a Sign</div>
-    </div> 
-    <button class="btn btn-primary mr-1">Select</button> 
+    <span class="help-block" *ngIf="form.touched && form.invalid">Please select a sign</span>
+    
     <h2>{{sign?.planet | titlecase}}</h2>
     </form>
     

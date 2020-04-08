@@ -44,5 +44,6 @@ export class RulingPlanetComponent implements OnInit {
     return;
   }
   }
+  
 }
 
