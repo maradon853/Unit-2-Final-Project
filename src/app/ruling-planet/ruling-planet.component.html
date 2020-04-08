@@ -8,7 +8,9 @@
     <option *ngFor="let sign of signs"
              [ngValue]="sign">{{sign.name | titlecase}}</option>        
     </select>
-     
+    <div *ngIf="submitted && this.registerForm.controls.title.errors" class="invalid-feedback">
+        <div *ngIf="this.registerForm.controls.title.errors.required">Please Select a Sign</div>
+    </div> 
           
     <h2>{{sign?.planet | titlecase}}</h2>
     
