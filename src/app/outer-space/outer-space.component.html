@@ -1,7 +1,13 @@
-<div class="apod">
+
 <h1>Astronomy Picture of the Day</h1>
-<h3>{{pictures.title}}</h3>
-<img src={{pictures.url}}>
-<p>{{pictures.explanation}}</p>
+<div *ngIf="picture">
+
+
+<h3>{{picture.title}}</h3>
+
+<img src={{picture.url}}>
+
+<p>{{picture.explanation}}</p>
 </div>
+
 

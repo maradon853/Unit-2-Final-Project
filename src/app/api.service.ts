@@ -12,7 +12,7 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getPics() {
+  public getPics() {
     const pics = this.httpClient.get(this.url);
     return pics;
   }

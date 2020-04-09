@@ -1,5 +1,6 @@
 <div class="grid">
 <div class="row">
+
 <div class="col-1-2">
 <h1>The Twelve Signs</h1>
 <ul class="signs">
@@ -11,7 +12,19 @@
 </ul>
 </div>
 
-<div class="row">
+
 <div class="col-1-2">
-<app-sign-detail [sign]="selectedSign"></app-sign-detail>
+<div *ngIf="selectedSign">
+    <h2>{{selectedSign.name | titlecase}} Details</h2>
+    <div><span>Dates: </span>{{selectedSign.startDate | titlecase}} - {{selectedSign.endDate | titlecase}}</div>
+    <div><span>Element: </span>{{selectedSign.element | titlecase}}</div>
+    <div><span>Mode: </span>{{selectedSign.mode | titlecase}}</div>
+    <div><span>Corresponding Tarot Card: </span>{{selectedSign.tarot | titlecase}}</div>
 </div>
+</div>
+
+</div>
+</div>
+
+
+    

@@ -9,6 +9,7 @@ describe('SignsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ SignsComponent ]
+      
     })
     .compileComponents();
   }));

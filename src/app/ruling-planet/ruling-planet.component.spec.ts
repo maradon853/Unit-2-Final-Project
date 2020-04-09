@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RulingPlanetComponent } from './ruling-planet.component';
 
 describe('RulingPlanetComponent', () => {
@@ -8,7 +8,9 @@ describe('RulingPlanetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RulingPlanetComponent ]
+      declarations: [ RulingPlanetComponent ],
+      imports: [FormsModule,
+        ReactiveFormsModule,]
     })
     .compileComponents();
   }));

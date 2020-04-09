@@ -7,14 +7,14 @@ import { ApiService } from '../api.service';
   styleUrls: ['./outer-space.component.scss']
 })
 export class OuterSpaceComponent implements OnInit {
-  pictures;
+  picture;
 
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
     this.apiService.getPics().subscribe((data)=>{
       console.log(data);
-      this.pictures = data;
+      this.picture = data;
     });
   }
 
