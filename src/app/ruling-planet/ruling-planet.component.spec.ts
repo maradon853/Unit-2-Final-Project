@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { RulingPlanetComponent } from './ruling-planet.component';
 
 describe('RulingPlanetComponent', () => {

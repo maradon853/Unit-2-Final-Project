@@ -14,7 +14,7 @@ export class RulingPlanetComponent implements OnInit {
   submitted = false;
   signs = SIGNS;
   selectedSign: Sign;
-  form: FormGroup;
+  form: FormGroup;  
 
   constructor(private formBuilder: FormBuilder) { 
     this.form = new FormGroup({
@@ -44,6 +44,6 @@ export class RulingPlanetComponent implements OnInit {
     return;
   }
   }
-  
+
 }
 
