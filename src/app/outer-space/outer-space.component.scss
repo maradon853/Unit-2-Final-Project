@@ -1,3 +1,5 @@
+$bgcolor: rgb(163, 219, 241);
+
 h1 {
     font-family: "Brush Script MT";
     font-size: 4em;
@@ -6,4 +8,10 @@ h1 {
       text-align: center;
       padding-left: 80px;
       padding-right: 80px;
+  }
+  .container{
+      padding-top: 80px;
+  }
+  .card{
+      background-color: $bgcolor;
   }

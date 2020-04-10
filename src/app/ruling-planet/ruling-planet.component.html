@@ -1,4 +1,7 @@
+<div class="container">
+    <img src="assets/img/planets.png">
 <div class="form-group" [class.has-error]="form.touched && form.invalid">
+    
 
     <h1>Find Your Ruling Planet</h1>
     
@@ -14,6 +17,11 @@
     </select>
     <span class="help-block" *ngIf="form.touched && form.invalid">Please select a sign</span>
     
-    <h2>{{sign?.planet | titlecase}}</h2>
+    <div class="card" *ngIf="sign">
+    <div class="card-body">
+    <h2 class="card-title">{{sign?.planet | titlecase}}</h2>
+    </div>
+    </div>
+
 </form>
-    
+</div> 

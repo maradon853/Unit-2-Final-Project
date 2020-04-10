@@ -1,3 +1,5 @@
+$bgcolor: rgb(163, 219, 241);
+
 h1 {
     font-family: "Brush Script MT";
     font-size: 4em;
@@ -7,13 +9,20 @@ h1 {
     font-size: 4em;
     text-align: center;
   }
-  .form-group {
-      padding-left: 80px;
+  .container {
+      //padding-left: 80px;
       padding-right: 80px;
+     // padding-top: 80px;
+  }
+  img{
+    text-align: center;
   }
   [class*='col-'] {
     float: left;
   }
   .col-1-2 {
     width: 50%
+  }
+  .card {
+    background-color: $bgcolor;
   }

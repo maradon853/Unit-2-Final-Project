@@ -1,3 +1,5 @@
+$bgcolor: rgb(163, 219, 241);
+
 h1 {
   font-family: "Brush Script MT";
   font-size: 4em;
@@ -7,7 +9,14 @@ h2 {
   font-size: 4em;
 }
 .grid{
-  padding-left: 80px;
+  padding-left: 160px;
+  padding-right: 80px;
+  padding-top: 80px;
+}
+.card{
+  padding-right: 80px;
+  background-color: $bgcolor;
+
 }
 [class*='col-'] {
   float: left;
@@ -25,7 +34,7 @@ h2 {
     cursor: pointer;
     position: relative;
     left: 0;
-    background-color: lightblue;
+    background-color: $bgcolor;
     margin: .5em;
     padding: .3em 0;
     height: 1.6em;

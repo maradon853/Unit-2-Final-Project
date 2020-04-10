@@ -15,11 +15,18 @@
 
 <div class="col-1-2">
 <div class="signDetail" *ngIf="selectedSign">
-    <h2>{{selectedSign.name | titlecase}} Details</h2>
-    <div><span>Dates: </span>{{selectedSign.startDate | titlecase}} - {{selectedSign.endDate | titlecase}}</div>
-    <div><span>Element: </span>{{selectedSign.element | titlecase}}</div>
-    <div><span>Mode: </span>{{selectedSign.mode | titlecase}}</div>
-    <div><span>Corresponding Tarot Card: </span>{{selectedSign.tarot | titlecase}}</div>
+    <div class="card">
+        <div class="card-body">
+    <h2 class="card-title">{{selectedSign.name | titlecase}} Details</h2>
+    <p class="card-text">
+    Dates: {{selectedSign.startDate | titlecase}} - {{selectedSign.endDate | titlecase}}
+    <br>Element: {{selectedSign.element | titlecase}}
+    <br>Mode: {{selectedSign.mode | titlecase}}
+    <br>Corresponding Tarot Card: {{selectedSign.tarot | titlecase}}
+    </p>
+</div>
+</div>
+
 </div>
 </div>
 
