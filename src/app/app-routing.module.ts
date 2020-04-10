@@ -8,7 +8,7 @@ import { SignsComponent } from './signs/signs.component';
 const routes: Routes = [
   //{ path: "", component: AppComponent },
   { path: "signs", component: SignsComponent },
-  { path: "rulling planet", component: RulingPlanetComponent },
+  { path: "ruling planet", component: RulingPlanetComponent },
   { path: "apod", component: OuterSpaceComponent }
 ];
 
