@@ -1,27 +1,28 @@
+
 <div class="container">
-    <img src="assets/img/planets.png">
+<h1>Find Your Ruling Planet</h1>
+
+<!--This is a dropdown form-->
 <div class="form-group" [class.has-error]="form.touched && form.invalid">
-    
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-    <h1>Find Your Ruling Planet</h1>
-    
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+<label>Select Your Sign</label>   
+<select formControlName="sign" id="form" class="form-control">
 
-    <label>Select Your Sign</label>
-          
-    <select formControlName="sign" id="form" class="form-control">
-    
-        <option *ngFor="let sign of signs"
-             [ngValue]="sign">{{sign.name | titlecase}}</option>
-                    
-    </select>
-    <span class="help-block" *ngIf="form.touched && form.invalid">Please select a sign</span>
-    
-    <div class="card" *ngIf="sign">
-    <div class="card-body">
-    <h2 class="card-title">{{sign?.planet | titlecase}}</h2>
-    </div>
-    </div>
+<!--This for loop displays a list of zodiac signs as menu items-->
+<option *ngFor="let sign of signs"
+[ngValue]="sign">{{sign.name | titlecase}}</option>
+</select>
+
+<!--This line provides validation for the form-->
+<span class="help-block" *ngIf="form.touched && form.invalid">Please select a sign</span>
+
+<!--This section appears when user selects a sign-->    
+<div class="card" *ngIf="sign">
+<div class="card-body">
+<h2 class="card-title">{{sign?.planet | titlecase}}</h2>
+</div>
+</div>
 
 </form>
 </div> 

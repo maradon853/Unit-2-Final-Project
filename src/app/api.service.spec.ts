@@ -15,13 +15,9 @@ describe('ApiService', () => {
     expect(service).toBeTruthy();
   });
 
-  let service: ApiService;
+   let service: ApiService;
 
-it("check Service is running", () => {
-  expect(ApiService).toBeTruthy;
-});
-
-it("check API URL", () => {
-  expect(get).toContain(service);
-});
+  it("checks API URL", () => {
+    expect(get).toContain(service);
+  });
 });

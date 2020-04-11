@@ -28,6 +28,7 @@ describe('SignsComponent', () => {
     expect(component.signs.length).toEqual(12);
   });
 
+  //tests if second section is blank until a sign is selected
   it('should hide contents if signDetail is false', () => {
       expect(fixture.debugElement.query(By.css('.selectedSign'))).toBeNull();
     });

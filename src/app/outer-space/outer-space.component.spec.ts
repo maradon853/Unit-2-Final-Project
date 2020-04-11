@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { OuterSpaceComponent } from './outer-space.component';
 import { ApiService } from '../api.service';
 import { of } from 'rxjs';
@@ -34,6 +33,7 @@ describe('OuterSpaceComponent', () => {
     expect(apiService).toBeTruthy();
   });
 
+  //tests that data from API appear in browser
   it('should return a picture with title and description', () => {
     const pictureResponse = [
       { color: 'green' }

@@ -7,6 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./outer-space.component.scss']
 })
 export class OuterSpaceComponent implements OnInit {
+//variable used to reference values from NASA json object
   picture;
 
   constructor(private apiService: ApiService) { }

@@ -10,7 +10,6 @@ import { SIGNS } from '../theSigns';
 })
 export class RulingPlanetComponent implements OnInit {
   title = 'ruling-planet';
-  //registerForm: FormGroup;
   submitted = false;
   signs = SIGNS;
   selectedSign: Sign;
@@ -38,9 +37,8 @@ export class RulingPlanetComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-
     // stop here if form is invalid
-  if (this.form.invalid) {
+    if (this.form.invalid) {
     return;
   }
   }
