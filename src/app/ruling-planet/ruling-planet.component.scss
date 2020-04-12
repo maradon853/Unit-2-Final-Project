@@ -2,21 +2,18 @@ $bgcolor: rgb(135, 171, 238);
 
 h1 {
     font-family: "Brush Script MT";
-    font-size: 4em;
+    font-size: 3em;
   }
   h2 {
     font-family: "Brush Script MT";
     font-size: 4em;
     text-align: center;
   }
-  .container {
-      //padding-left: 80px;
-      padding-right: 80px;
-      padding-top: 80px;
-  }
-  img{
-    text-align: center;
-  }
+  .grid{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+ }
   [class*='col-'] {
     float: left;
   }
@@ -25,4 +22,5 @@ h1 {
   }
   .card {
     background-color: $bgcolor;
+    align-items: center;
   }

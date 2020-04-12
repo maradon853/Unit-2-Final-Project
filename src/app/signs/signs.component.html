@@ -16,8 +16,10 @@
 
 <!--This section becomes visible when user selects a sign-->
 <div class="col-1-2">
+
 <div class="signDetail" *ngIf="selectedSign">
-<div class="card">
+
+<div class="card" style="width: 400px">
 <div class="card-body">
     <h2 class="card-title">{{selectedSign.name | titlecase}} Details</h2>
     <p class="card-text">
@@ -30,6 +32,7 @@
 </div>
 
 </div>
+
 </div>
 
 </div>

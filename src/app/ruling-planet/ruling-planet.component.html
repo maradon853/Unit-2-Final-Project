@@ -1,5 +1,8 @@
 
-<div class="container">
+<div class="grid">
+<div class="row">
+
+<div class="col-1-2">
 <h1>Find Your Ruling Planet</h1>
 
 <!--This is a dropdown form-->
@@ -16,13 +19,24 @@
 
 <!--This line provides validation for the form-->
 <span class="help-block" *ngIf="form.touched && form.invalid">Please select a sign</span>
+</form>
+</div>
+</div>
 
-<!--This section appears when user selects a sign-->    
-<div class="card" *ngIf="sign">
+<!--This section appears when user selects a sign-->  
+<div class="col-1-2">  
+
+<div class="planetDetail" *ngIf="sign">
+
+<div class="card" style="width: 21.5em;margin:0 auto;">
 <div class="card-body">
 <h2 class="card-title">{{sign?.planet | titlecase}}</h2>
 </div>
 </div>
 
-</form>
-</div> 
+</div>
+
+</div>
+
+</div>
+</div>
