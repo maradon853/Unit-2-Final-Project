@@ -1,5 +1,6 @@
 import { Sign } from "./sign";
 
+//array of zodiac signs used in signsComponent and rulingPlanetComponent
 export const SIGNS: Sign[] = [
     new Sign("aries", "march 21", "april 20", "fire", "mars", "cardinal", "the emperor"),
     new Sign("taurus", "april 21", "may 21", "earth", "venus", "fixed", "the hierophant"),

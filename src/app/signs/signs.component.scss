@@ -1,4 +1,4 @@
-$bgcolor: rgb(163, 219, 241);
+$bgcolor: rgb(135, 171, 238);
 
 h1 {
   font-family: "Brush Script MT";
@@ -42,14 +42,14 @@ h2 {
   }
   .signs li:hover {
     //color: rgb(50, 10, 83);
-    background-color: lightseagreen;
+    background-color: lightblue;
     left: .1em;
   }
   .signs li.selected {
-    background-color: lightseagreen;
+    background-color: lightblue;
     //color: rgb(50, 10, 83);
   }
   .heroes li.selected:hover {
-    background-color: lightseagreen;
+    background-color: lightblue;
     //color: rgb(204, 156, 214);
   }

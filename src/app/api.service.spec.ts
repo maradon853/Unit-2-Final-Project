@@ -15,8 +15,9 @@ describe('ApiService', () => {
     expect(service).toBeTruthy();
   });
 
-   let service: ApiService;
-
+  let service: ApiService;
+  
+  //tests if ApiService call contains NASA URL
   it("checks API URL", () => {
     expect(get).toContain(service);
   });

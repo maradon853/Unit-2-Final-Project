@@ -1,13 +1,13 @@
-$bgcolor: rgb(163, 219, 241); 
+$bgcolor: rgb(135, 171, 238); 
 
 .container {
-    padding-left: 80px;
-    
+    padding-left: 80px;  
 }
 h2 {
     text-align: center;
     font-family: "Brush Script MT";
     font-size: 9em;
+    color: $bgcolor;
 }
 [class*='col-'] {
     float: left;
@@ -20,8 +20,22 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: $bgcolor;
+  //background-color: $bgcolor;
   border-radius: 4px;
   color: black;
-  
+}
+.bg-light{
+    background-color: $bgcolor !important;
+}
+.bg{
+    background-image: url("../assets/img/milky-way.jpeg");
+}
+.watermark{
+  display: block;
+  position: relative;
+}
+.watermark::after{
+    background: url("../assets/img/milky-way.jpeg");
+    opacity: 0.2;
+    position: absolute;
 }
