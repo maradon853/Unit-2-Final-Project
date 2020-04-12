@@ -8,8 +8,9 @@ export class Sign {
     planet: string;
     mode: string;
     tarot: string;
+    stats: string;
 
-    constructor(name: string, startDate: string, endDate: string, element: string, planet: string, mode: string, tarot: string){
+    constructor(name: string, startDate: string, endDate: string, element: string, planet: string, mode: string, tarot: string, stats: string){
         this.name = name;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -17,5 +18,6 @@ export class Sign {
         this.planet = planet;
         this.mode = mode;
         this.tarot = tarot;
+        this.stats = stats;
     }
 }
