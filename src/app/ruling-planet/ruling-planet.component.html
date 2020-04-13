@@ -14,7 +14,7 @@
 
 <!--This for loop displays a list of zodiac signs as menu items-->
 <option *ngFor="let sign of signs"
-[ngValue]="sign">{{sign.name | titlecase}}</option>
+[ngValue]="sign">{{sign.name | titlecase}}: {{sign.startDate | titlecase}}-{{sign.endDate | titlecase}}</option>
 </select>
 
 <!--This line provides validation for the form-->

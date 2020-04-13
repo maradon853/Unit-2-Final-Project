@@ -1,4 +1,5 @@
 $bgcolor: rgb(135, 171, 238); 
+$hoverColor: turquoise;
 
 h2 {
     text-align: center;
@@ -10,9 +11,19 @@ h3{
     color: $bgcolor;
     text-align: center;
 }
-// a{
-//     color: $bgcolor;
-// }
+#links a{
+    color: black;
+    font-size:15pt;
+}
+#links a:hover{
+    color: $hoverColor;
+}
+a{
+    color: $bgcolor;
+}
+a:hover{
+    color: $hoverColor;
+}
 .bg-light{
     background-color: $bgcolor !important;
 }
@@ -33,5 +44,8 @@ h3{
     bottom: 0;
     width: 100%;
     height: 2.5rem;            
+}
+p{
+    color: $bgcolor;
 }
 

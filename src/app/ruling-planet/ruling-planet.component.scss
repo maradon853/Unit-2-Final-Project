@@ -3,12 +3,14 @@ $bgcolor: rgb(135, 171, 238);
 h1 {
     font-family: "Brush Script MT";
     font-size: 4em;
-  }
-  .container{
+}
+.container{
     padding-top: 40px;
- }
-
-  .card {
+}
+.card {
     background-color: $bgcolor;
     align-items: center;
-  }
+}
+.card-title{
+  text-align: center;
+}
