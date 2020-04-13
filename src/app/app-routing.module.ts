@@ -5,6 +5,7 @@ import { RulingPlanetComponent } from './ruling-planet/ruling-planet.component';
 import { SignsComponent } from './signs/signs.component';
 
 const routes: Routes = [
+  
 //routing paths for the navigation menu links
   { path: "signs", component: SignsComponent },
   { path: "ruling planet", component: RulingPlanetComponent },

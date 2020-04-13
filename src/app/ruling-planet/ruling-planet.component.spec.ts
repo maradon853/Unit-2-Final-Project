@@ -36,20 +36,20 @@ describe('RulingPlanetComponent', () => {
     expect(Object.keys(component.form.controls)).toEqual([
       'sign'
     ]);
-});
+  });
 
-it('should return false if the form control is not valid', () => {
-  component.ngOnInit();
-  component.form.controls['sign'].setValue('');
-  expect(component.form.valid).toBe(false);
-});
+  it('should return false if the form control is not valid', () => {
+   component.ngOnInit();
+    component.form.controls['sign'].setValue('');
+    expect(component.form.valid).toBe(false);
+  });
 
-it('should return true if the form control is valid', () => {
-  component.ngOnInit();
-  component.form.controls['sign'].setValue('aries');
-  expect(component.form.valid).toBe(true);
-  component.onSubmit();
-  expect(component.submitted).toBe(true);
-});
+  it('should return true if the form control is valid', () => {
+    component.ngOnInit();
+    component.form.controls['sign'].setValue('aries');
+    expect(component.form.valid).toBe(true);
+    component.onSubmit();
+    expect(component.submitted).toBe(true);
+  });
 
 });
