@@ -9,7 +9,7 @@
 <div class="form-group" [class.has-error]="form.touched && form.invalid">
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-<label>Select Your Sign</label>   
+<label>Select Your Zodiac Sign</label>   
 <select formControlName="sign" id="form" class="form-control">
 
 <!--This for loop displays a list of zodiac signs as menu items-->
@@ -18,7 +18,7 @@
 </select>
 
 <!--This line provides validation for the form-->
-<span class="help-block" *ngIf="form.touched && form.invalid">Please select a sign</span>
+<div class="alert alert-danger" *ngIf="form.touched && form.invalid">Please select a sign</div>
 </form>
 </div>
 </div>

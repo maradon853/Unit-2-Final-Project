@@ -9,6 +9,10 @@ h2 {
     font-size: 9em;
     color: $bgcolor;
 }
+h3{
+    color: $bgcolor;
+    text-align: center;
+}
 [class*='col-'] {
     float: left;
 }
@@ -44,4 +48,7 @@ a {
      right: 0;
     position: absolute;
     z-index: -1;
+}
+a{
+    color: $bgcolor;
 }

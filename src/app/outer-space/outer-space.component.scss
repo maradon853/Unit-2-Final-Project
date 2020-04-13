@@ -4,14 +4,17 @@ h1 {
     font-family: "Brush Script MT";
     font-size: 4em;
   }
-.apod {
-    text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
 .container{
     padding-top: 80px;
   }
 .card{
     background-color: $bgcolor;
+  }
+  .card-text{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  img{
+    align-self: center;
   }

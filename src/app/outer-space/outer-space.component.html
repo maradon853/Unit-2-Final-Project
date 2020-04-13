@@ -3,13 +3,16 @@
 
 <div class="container">
 <h1>Astronomy Picture of the Day</h1>
-
+<p>Brought to you by <a href="https://apod.nasa.gov/apod/astropix.html">NASA APOD</a></p>
 <div class="card">
 <div class="card-body">
+    
+<!--calls values from NASA json with variable 'picture'-->
 <h3>{{picture.title}}</h3>
+<p>Date: {{picture.date | date: "short"}}</p>
 </div>
 
-<img src={{picture.url}}>
+<img width="50%" height="50%" src={{picture.url}}>
 
 <div class="card-body"></div>
 <p class="card-text">{{picture.explanation}}</p>
