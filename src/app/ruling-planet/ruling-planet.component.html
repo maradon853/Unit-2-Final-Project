@@ -1,8 +1,8 @@
 
-<div class="grid">
+<div class="container">
 <div class="row">
 
-<div class="col-1-2">
+<div class="col-md-6">
 <h1>Find Your Ruling Planet</h1>
 
 <!--This is a dropdown form-->
@@ -24,13 +24,13 @@
 </div>
 
 <!--This section appears when user selects a sign-->  
-<div class="col-1-2">  
+<div class="col-md-6">  
 
 <div class="planetDetail" *ngIf="sign">
 
 <div class="card" style="width: 21.5em;margin:0 auto;">
 <div class="card-body">
-<h2 class="card-title">{{sign?.planet | titlecase}}</h2>
+<h1 class="card-title">{{sign?.planet | titlecase}}</h1>
 <p class="card-text">{{sign?.stats}}</p>
 </div>
 </div>

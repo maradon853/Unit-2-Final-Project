@@ -1,32 +1,36 @@
 
-<div class="grid">
+<div class="container">
 <div class="row">
 
 <!--This for loop displays a list of clickable zodiac signs-->
-<div class="col-1-2">
+<div class="col-md-6">
 <h1>The Twelve Signs</h1>
-<ul class="signs">
+
+
+<ul class="signs" style="font-weight: bold;">
 <li *ngFor="let sign of signs"
     [class.selected]="sign === selectedSign"
     (click)="onSelect(sign)">
     <span>{{ sign.name | titlecase }}</span>
 </li>
 </ul>
+
+
 </div>
 
 <!--This section becomes visible when user selects a sign-->
-<div class="col-1-2">
+<div class="col-md-6">
 
 <div class="signDetail" *ngIf="selectedSign">
 
 <div class="card" style="width: 400px">
 <div class="card-body">
-    <h2 class="card-title">{{selectedSign.name | titlecase}} Details</h2>
+    <h1 class="card-title">{{selectedSign.name | titlecase}} Details</h1>
     <p class="card-text">
-    Dates: {{selectedSign.startDate | titlecase}} - {{selectedSign.endDate | titlecase}}
-    <br>Element: {{selectedSign.element | titlecase}}
-    <br>Mode: {{selectedSign.mode | titlecase}}
-    <br>Corresponding Tarot Card: {{selectedSign.tarot | titlecase}}
+    <b>Dates:</b> {{selectedSign.startDate | titlecase}} - {{selectedSign.endDate | titlecase}}
+    <br><b>Element:</b> {{selectedSign.element | titlecase}}
+    <br><b>Mode:</b> {{selectedSign.mode | titlecase}}
+    <br><b>Corresponding Tarot Card:</b> {{selectedSign.tarot | titlecase}}
     </p>
 </div>
 </div>
