@@ -17,6 +17,7 @@ export class SignsComponent implements OnInit {
   ngOnInit() {
   }
 
+  //displays values of selected sign
   onSelect(sign: Sign): void {
     this.selectedSign = sign;
   }

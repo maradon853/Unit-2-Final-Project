@@ -17,10 +17,11 @@ export class RulingPlanetComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) { 
     this.form = new FormGroup({
-      sign: new FormControl(null)
+    sign: new FormControl(null)
     })
   }
 
+  //displays values of selected sign
   get sign(): string {
     return this.form ? this.form.get('sign').value : '';
   }
@@ -31,13 +32,8 @@ export class RulingPlanetComponent implements OnInit {
     });
   }
   
-  onSelect(sign: Sign): void {
-    this.selectedSign = sign;
-  }
-
   onSubmit() {
     this.submitted = true;
-    // stop here if form is invalid
     if (this.form.invalid) {
     return;
   }

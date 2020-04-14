@@ -1,5 +1,4 @@
-//this class is used to catigorize the twelve zodiac signs and 
-//the corresponding ruling planets displayed in the app 
+//this class is used to catigorize the twelve zodiac signs displayed in the app
 export class Sign {
     name: string;
     startDate: string;

@@ -13,14 +13,11 @@ export class OuterSpaceComponent implements OnInit {
 
   constructor(private apiService: ApiService) { }
 
+  //getPics() is defined in ApiService
   ngOnInit() {
-
-    //getPics() is defined in ApiService
     this.apiService.getPics().subscribe((data)=>{
-
-    //full json will be in console
-      console.log(data);
-      this.picture = data;
+    console.log(data);
+    this.picture = data;
     });
   }
 

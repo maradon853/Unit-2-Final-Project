@@ -1,28 +1,27 @@
 <div class="container">
 <div class="row">
-
 <div class="col-md-6">
 <h1>Find Your Ruling Planet</h1>
 
-<!--This is a dropdown form-->
+<!--Dropdown form-->
 <div class="form-group" [class.has-error]="form.touched && form.invalid">
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
 <label>Select Your Zodiac Sign</label>   
 <select formControlName="sign" id="form" class="form-control">
 
-<!--This for loop displays a list of zodiac signs as menu items-->
+<!--This for loop displays a list of zodiac signs (defined in theSigns.ts) as menu items-->
 <option *ngFor="let sign of signs"
 [ngValue]="sign">{{sign.name | titlecase}}: {{sign.startDate | titlecase}}-{{sign.endDate | titlecase}}</option>
 </select>
 
-<!--This line provides validation for the form-->
+<!--Provides validation for the form-->
 <div class="alert alert-danger" *ngIf="form.touched && form.invalid">Please select a sign</div>
 </form>
 </div>
 </div>
 
-<!--This section appears when user selects a sign-->  
+<!--This section appears when user selects a sign, using get sign()-->  
 <div class="col-md-6">  
 
 <div class="planetDetail" *ngIf="sign">

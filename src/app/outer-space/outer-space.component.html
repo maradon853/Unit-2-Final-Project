@@ -1,14 +1,16 @@
-<!--This component utilizes ApiService, which gets data from a NASA API-->
+<!--This component uses ApiService, which gets data from a NASA API-->
+<!--variable 'picture' defined in ts file-->
 <div *ngIf="picture">
 
 <div class="container">
 <h1>Astronomy Picture of the Day</h1>
-<p>Brought to you by <a href="https://apod.nasa.gov/apod/astropix.html">NASA APOD</a></p>
+<p>Brought to you by NASA at <a href="https://apod.nasa.gov/apod/astropix.html">apod.nasa.gov</a></p>
+
 <div class="card">
 <div class="card-body">
     
-<!--calls values from NASA json with variable 'picture'-->
-<h3>{{picture.title}}</h3>
+<!--calls values from NASA json-->
+<h2>{{picture.title}}</h2>
 <p>Date: {{picture.date | date: "short"}}</p>
 </div>
 

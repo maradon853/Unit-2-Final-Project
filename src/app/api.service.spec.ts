@@ -27,7 +27,7 @@ describe('ApiService', () => {
     expect(get).toContain(service);
   });
 
-  //tests the getPics method 
+  //tests getPics()
   it('be able to retrieve posts from the API via GET', () => {
     const dummyPics = [{
         picture: 'NASA'

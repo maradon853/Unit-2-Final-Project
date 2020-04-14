@@ -13,7 +13,7 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  //calls to obtain data from NASA Api
+  //calls to get data from NASA Api
   public getPics() {
     const pics = this.httpClient.get(this.url);
     return pics;
