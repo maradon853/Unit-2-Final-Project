@@ -602,3 +602,4 @@
 [0410/112341.162:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
 [0410/112341.162:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffc10960000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0410/112341.162:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL
+[0415/191150.342:ERROR:process_memory_win.cc(73)] ReadMemory at 0x239865136b0 of 72 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
