@@ -13,6 +13,7 @@ This project is a Angular 8 app that displays basic information about astronomy 
 ## Demo Images
 
 Click the link below to view screenshots of the application.
+![astrologia-demo](astrologia_demo.pdf)
 
 ## Setup
 
